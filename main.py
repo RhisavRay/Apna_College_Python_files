@@ -1,33 +1,33 @@
-# print("Hello World")
-# print(25, 33)
-# print(25+33)
-from os import name
-from xmlrpc.client import Boolean
+"""
+print("Hello World")
+print(25, 33)
+print(25+33)
 
-# ------------------------------------------------------------------ Variables in Python
-# name = "Rhisav"
-# age = 23
 
-# print("My name is : " + name)
-# print("I am " + str(age) + " years old.")
+------------------------------------------------------------------ Variables in Python
+name = "Rhisav"
+age = 23
+
+print("My name is : " + name)
+print("I am " + str(age) + " years old.")
 # The str(age) is needed as python can't concatenate str to str
 
-# print("I am", age, "years old.")
+print("I am", age, "years old.")
 # The same thing works when we use comma to separate them
 
 
-# ------------------------------------------------------------------ Data types in Python
-# name = "Rhisav"
-# age = 23
-# price = 16.34
-# old = False
-# a = None
+------------------------------------------------------------------ Data types in Python
+name = "Rhisav"
+age = 23
+price = 16.34
+old = False
+a = None
 
-# print(type(name))
-# print(type(age))
-# print(type(price))
-# print(type(old))
-# print(type(a))
+print(type(name))
+print(type(age))
+print(type(price))
+print(type(old))
+print(type(a))
 
 # There are 5 data types in Python
 # 1. Integer: +ve, -ve, zero
@@ -38,29 +38,61 @@ from xmlrpc.client import Boolean
 
 
 # Q---------Sum of variables
-# a = 2
-# b = 3
-# sum = a + b
-# print(sum)
+a = 2
+b = 3
+sum = a + b
+print(sum)
 
 
-# ------------------------------------------------------------------ Expression Execution
-# a, b = 2, 3
-# txt = "abc"
-# print(a*txt*b)
+------------------------------------------------------------------ Expression Execution
+a, b = 2, 3
+txt = "abc"
+print(a*txt*b)
 # # When we do multiplication of a number and a string in Python, it just repeats that string for the number of times the integer is
 
-# a, b = 1, 2
-# c = a/b
-# print(c)
+a, b = 1, 2
+c = a/b
+print(c)
 # # Division between 2 integers will result in a float
 
-# a, b = 1, 2
-# c = a//b
-# print(c)
-# # Integer division will result in an integer
+a, b = 1, 2
+c = a//b
+print(c)
+# Integer division will result in an integer
 
-# a, b = 5, -2
-# c = a%b
-# print(c)
-# # Remainder is negative when only denominator is negative
+a, b = 5, -2
+c = a%b
+print(c)
+# Remainder is negative when only denominator is negative
+
+
+------------------------------------------------------------------ Input in Python
+name = input("Enter your name: ")
+# Default input type is string
+age = int(input("Enter your age: "))
+price = float(input("Enter the price: "))
+
+print(name, age, price)
+
+
+------------------------------------------------------------------ Conditional Statements
+age = int(input("Enter your age: "))
+if(age <= 0):
+    print("Sorry, your age is invalid.")
+elif(age <= 18):
+    print("You are not eligible to vote.")
+else:
+    print("You are eligible to drink.")
+
+# Single line ternary operator. Basically a short-hand for if-else
+food = input("Food: ")
+
+eat = "Yes" if food == "Cake" or food == "cake" else "No"
+print(food, eat)
+
+print("Sweet") if food == "Cake" or food == "Jalebi" else print("Not sweet")
+
+age = int(input("Enter your age: "))
+vote = ("No", "Yes") [age >= 18]
+print(age, vote)
+"""
