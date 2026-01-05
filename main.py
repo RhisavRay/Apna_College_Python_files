@@ -37,3 +37,30 @@ from xmlrpc.client import Boolean
 # 5. None: This is used to represent the absence of a value or a null object reference
 
 
+# Q---------Sum of variables
+# a = 2
+# b = 3
+# sum = a + b
+# print(sum)
+
+
+# ------------------------------------------------------------------ Expression Execution
+# a, b = 2, 3
+# txt = "abc"
+# print(a*txt*b)
+# # When we do multiplication of a number and a string in Python, it just repeats that string for the number of times the integer is
+
+# a, b = 1, 2
+# c = a/b
+# print(c)
+# # Division between 2 integers will result in a float
+
+# a, b = 1, 2
+# c = a//b
+# print(c)
+# # Integer division will result in an integer
+
+# a, b = 5, -2
+# c = a%b
+# print(c)
+# # Remainder is negative when only denominator is negative
